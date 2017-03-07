@@ -1,4 +1,3 @@
-/NEED
 #!/bin/bash
 DEMO_DIR=$(dirname $(readlink -f $0))
 . $DEMO_DIR/env.sh
@@ -46,6 +45,3 @@ fi
 
 rm -f *.sqlite
 rm -f output/*
-
-# Create clean databases
-$DEMO_DIR/create.sh

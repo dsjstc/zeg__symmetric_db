@@ -25,6 +25,7 @@ symlinks.
 3. Run the following scripts.
   0-setup.sh (replaces the symmetricDS setenv.sh with something that 
 			supports symlinks, creates working directories)
+  0b-modify *.properties (if you don't want your DB files in /tmp)
   1-create.sh (sets up the root and client1 databases)
   2-run_root.sh (runs the root node)
   3-run_client1.sh (...)
