@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/emclient/emclient.iml" filepath="$PROJECT_DIR$/emclient/emclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emserver/emserver.iml" filepath="$PROJECT_DIR$/emserver/emserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/emsy.iml" filepath="$PROJECT_DIR$/.idea/emsy.iml" />
+    </modules>
+  </component>
+</project>

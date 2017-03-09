@@ -1,4 +1,4 @@
-	CREATE TABLE "sym_node"(
+	CREATE TABLE IF NOT EXISTS  "sym_node"(
 		"node_id" VARCHAR NOT NULL PRIMARY KEY ,
 		"node_group_id" VARCHAR NOT NULL,
 		"external_id" VARCHAR NOT NULL,
@@ -16,12 +16,12 @@
 		"deployment_type" VARCHAR
 	);
 
-	CREATE TABLE "sym_node_identity"(
+	CREATE TABLE IF NOT EXISTS "sym_node_identity"(
 		"node_id" VARCHAR NOT NULL PRIMARY KEY ,
 		FOREIGN KEY ("node_id") REFERENCES "sym_node" ("node_id")
 	);
 
 	insert into sym_node (node_id,node_group_id,external_id,sync_enabled,sync_url,schema_version,symmetric_version,database_type,database_version,heartbeat_time,timezone_offset,batch_to_send_count,batch_in_error_count,created_at_node_id) 
-	 values ('003','store','003',1,null,null,null,null,null,current_timestamp,null,0,0,'000');
+	 values ('002','store','002',1,null,null,null,null,null,current_timestamp,null,0,0,'000');
 
-	INSERT INTO "sym_node_identity" VALUES('003');
+	INSERT INTO "sym_node_identity" VALUES('002');

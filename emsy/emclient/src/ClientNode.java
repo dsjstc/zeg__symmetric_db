@@ -1,5 +1,3 @@
-package ca.thundersun;
-
 import org.apache.log4j.helpers.Loader;
 import org.apache.log4j.helpers.OptionConverter;
 import org.jumpmind.symmetric.ClientSymmetricEngine;

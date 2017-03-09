@@ -2,9 +2,9 @@
 # TODO: 
 # Add sales transactions to client as well
 
-DEMO_DIR=$(dirname $(readlink -f $0))
-. $DEMO_DIR/env.sh
-cd $WORK_DIR
+SYM_DEMO_DIR=$(dirname $(readlink -f $0))
+. $SYM_DEMO_DIR/env.sh
+cd $SYM_WORK_DIR
 
 # Insert an item row with an ID consisting of a random word.
 DB=root.sqlite

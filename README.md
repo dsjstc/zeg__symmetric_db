@@ -3,14 +3,14 @@ In the process of trying to make things work, I created this demo
 embedded client.  The scripts are linux-only, but you should be able
 to get the idea by reading them.
 
-emclient/
+emsy/emclient/
 
 A (very minimal) embedded client that registers with and talks to the 
 demo root node.  
 
 1. Run the server.  You might use the rundemo stuff for this.
-2. Run setup.sh to create an initial /tmp/client3.sqlite
-	(Alternate, minimal version in small_sql_setup/)
+2. Run emsy/scripts/setup.sh to create an initial client2.sqlite
+	(An embedded client can't set itself up!)
 3. Build and run.  IntelliJ only, sorry!
 
 rundemo/ 
@@ -22,10 +22,10 @@ symlinks.
 
 1. Enter the rundemo directory
 2. Modify env.sh to match your environment
+   Modify *.properties if you don't want your DB files in /tmp
 3. Run the following scripts.
-  0-setup.sh (replaces the symmetricDS setenv.sh with something that 
-			supports symlinks, creates working directories)
-  0b-modify *.properties (if you don't want your DB files in /tmp)
+  0-setup.sh (creates working directories.  Replaces the symmetricDS 
+				setenv.sh with something that supports symlinks.)
   1-create.sh (sets up the root and client1 databases)
   2-run_root.sh (runs the root node)
   3-run_client1.sh (...)
