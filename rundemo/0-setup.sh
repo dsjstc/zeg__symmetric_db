@@ -33,6 +33,8 @@ mkdir -p /tmp/symmetricds/log/
 
 mkdir -p $WORK_DIR/output
 cd $WORK_DIR
+cp $DEMO_DIR/*.sh .
+
 if [ ! -e symhome ]; then 	ln -s $SYM_HOME/ symhome; fi
 if [ ! -e samples ]; then	ln -s $SYM_HOME/samples .; fi
 if [ ! -e bin ]; then		ln -s $SYM_HOME/bin .; fi
@@ -40,7 +42,7 @@ cp $DEMO_DIR/*properties $WORK_DIR/
 
 # Clean up from previous runs if necessary
 if pgrep -f SymmetricLauncher ; then
-	pkill SymmetricLauncher 
+	pkill -f SymmetricLauncher 
 fi
 
 rm -f *.sqlite

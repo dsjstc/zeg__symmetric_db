@@ -1,4 +1,7 @@
 #!/bin/bash
+# TODO: 
+# Add sales transactions to client as well
+
 DEMO_DIR=$(dirname $(readlink -f $0))
 . $DEMO_DIR/env.sh
 cd $WORK_DIR
@@ -15,5 +18,6 @@ insert into item ( item_id, name ) values ( NULL, '$PROD' );
 select last_insert_rowid();
 EOF`
 
+echo Cut-and-paste the following line to see what was added.
 echo 'echo "select * from item where item_id='$ROWID';" | sqlite3 ' $DB
 
