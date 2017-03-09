@@ -3,7 +3,7 @@ SYM_DEMO_DIR=$(dirname $(readlink -f $0))
 . $SYM_DEMO_DIR/env.sh
 
 # Fix things that need it
-chmod ugo+x $(SYM_DEMO_DIR)/*.sh
+chmod ugo+x $SYM_DEMO_DIR/*.sh
 
 if diff $SYM_GOOD_SETENV $SYM_BAD_SETENV > /dev/null; then 
 	echo setenv already fixed
