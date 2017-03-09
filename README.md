@@ -1,17 +1,12 @@
-# Sym demo package
-In the process of trying to make things work, I created this demo
-embedded client.  The scripts are linux-only, but you should be able
-to get the idea by reading them.
+# Symmetric DS demo package
 
-emsy/emclient/
+In the process of trying to make things work, I scripted this demo, to 
+allow me to restart the demo quickly with a totally clean setup.
+The scripts are linux-only, but you should be able to get the idea 
+by reading them.
 
-A (very minimal) embedded client that registers with and talks to the 
-demo root node.  
-
-1. Run the server.  You might use the rundemo stuff for this.
-2. Run emsy/scripts/setup.sh to create an initial client2.sqlite
-	(An embedded client can't set itself up!)
-3. Build and run.  IntelliJ only, sorry!
+I'm also including an embedded client and server that talk with the 
+same demo.
 
 rundemo/ 
 
@@ -30,3 +25,14 @@ symlinks.
   2-run_root.sh (runs the root node)
   3-run_client1.sh (...)
   4-eginsert.sh (adds a random item, you can use this to watch propagation)
+
+
+emsy/emclient/
+
+A (very minimal) embedded client that registers with and talks to the 
+demo root node.  
+
+1. Run the server.  You might use the rundemo stuff for this.
+2. Run emsy/scripts/setup.sh to create an initial client2.sqlite
+	(An embedded client can't set itself up!)
+3. Build and run.  IntelliJ only, sorry!
