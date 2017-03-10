@@ -3,8 +3,8 @@ function main() {
 # ENVIRONMENT
 export SYM_SCRIPTDIR=$(dirname $(readlink -f $0))
 . $SYM_SCRIPTDIR/../../rundemo/env.sh
-export SYM_CLI2_DB=$SYM_WORK_DIR/client2.sqlite
-export SYM_CLI2_PROPFILE=$SYM_SCRIPTDIR/../emclient/conf/emclient.properties
+export SYM_CLI2_DB=/tmp/client2.sqlite  # Needs an absolute path -- the java client doesn't have environment.
+export SYM_CLI2_PROPFILE=$SYM_SCRIPTDIR/../emclient/res/emclient.properties
 
 # Add necessary things to the working directory
 rm -f $SYM_CLI2_DB

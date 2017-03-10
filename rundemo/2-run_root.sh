@@ -13,4 +13,4 @@ echo ""
 echo Here are some useful commands:
 echo -------------------------------------------------------------------------
 echo . $SYM_DEMO_DIR/env.sh
-echo tail -f $SYM_WORK_DIR/output/rootrun.log
+echo tail -n 200 -f $SYM_WORK_DIR/output/rootrun.log | grep -v DataGapFastDetector
